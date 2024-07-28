@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image : trainwithshubham/notes-app-jenkins:latest
+     image : pshub/django-notes-app-image:v1
      ports :
          - "8000:8000"
