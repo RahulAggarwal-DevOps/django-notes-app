@@ -17,7 +17,7 @@ pipeline{
             steps{
                 echo "Build and test is done here"
                 sh "whoami"
-                sh "docker build -t django-notes-app-jenkins:v1 ."
+                sh "docker build -t django-notes-app-jenkins:v2 ."
             }
         }
         stage("Push to DockerHub"){
