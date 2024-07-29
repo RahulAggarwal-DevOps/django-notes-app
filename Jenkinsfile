@@ -32,9 +32,9 @@ pipeline{
                         )
                     ]
                 ){
-                sh "docker image tag django-notes-app-jenkins:v1 ${env.DockerHubUser}/django-notes-app-jenkins:v1"
+                sh "docker image tag django-notes-app-jenkins:v2 ${env.DockerHubUser}/django-notes-app-jenkins:v2"
                 sh "docker login -u ${env.DockerHubUser} -p ${env.DockerHubPasswd}"
-                sh "docker push ${env.DockerHubUser}/django-notes-app-jenkins:v1"
+                sh "docker push ${env.DockerHubUser}/django-notes-app-jenkins:v2"
                 }
             }
         }
