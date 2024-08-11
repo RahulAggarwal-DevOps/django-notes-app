@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image : pshub/django-notes-app-jenkins:v2
+     image : rahulaggarwaldevops/django-notes:latest
      ports :
          - "8000:8000"
